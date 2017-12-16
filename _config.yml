@@ -1,9 +1,10 @@
 title: James Coggan
 description: Personal website
-baseurl: "/""
+baseurl: "/"
 url: "https://jamescoggan.com"
 twitter_username: mad_team
 github_username:  jamescoggan
+user_github: "https://github.com/jamescoggan"
 show_downloads: false
 google_analytics: UA-111274362-1
 # Build settings

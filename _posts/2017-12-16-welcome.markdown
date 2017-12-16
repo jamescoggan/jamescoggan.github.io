@@ -1,0 +1,8 @@
+---
+layout: default
+title:  "Welcome"
+date:   2017-12-16 16:08:42 +0000
+categories: update
+---
+
+Welcome to my website, soon there will be posts about technology here
