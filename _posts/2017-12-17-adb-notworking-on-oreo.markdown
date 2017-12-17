@@ -28,8 +28,11 @@ adb F 12-17 12:46:47 12301 244340 transport_usb.cpp:37] Check failed: usb_packet
 
 # The fix
 After following stack overflow I encountered this [post](https://stackoverflow.com/questions/47665475/android-studio-adb-start-server-fails-adbkey-check-fails), that highlighted the bug is the current platform-tools version 27.0.0
-To fix it you need to downgrade to the tools 26.0.2 below you have the links:
+To fix it you need to downgrade to platform-tools 26.0.2 below you have the links:
 
 Windows: [platform-tools_r26.0.2-windows.zip](https://dl.google.com/android/repository/platform-tools_r26.0.2-windows.zip)
 
 Mac: [platform-tools_r26.0.2-darwin.zip](https://dl.google.com/android/repository/platform-tools_r26.0.2-darwin.zip)
+
+Remove the platform-tools folder from your SDK project, this command worked for me:
+`rm -rf ~/Library/Android/sdk/platform-tools/`
