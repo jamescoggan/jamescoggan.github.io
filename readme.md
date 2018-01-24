@@ -1,33 +1,8 @@
-# Labrador Jekyll Theme v1.0
+# jamescoggan.com
 
-This theme was built to present a little bit about of some professional profile.
+James Coggan's Personal webpage
 
-## Demo
-- [https://donini.github.io/labrador-jekyll-theme/](https://donini.github.io/labrador-jekyll-theme/)
-
-## Contents
-
-- [Pre-requisites](#pre-requisites)
-- [Directory structure](#directory-structure)
-    - [_config.yml](#settings-on-configyml)
-    - [.htaccess](#warning)
-    - [Translations](#translations)
-        - [_data](#_data-folder)
-        - [Social links](#social-links)
-    - [Components](#components)
-    - [Blog posts](#blog-posts)
-    - [Media files for posts](#media-files-for-posts)
-- [Author](#author)
-- [License](#license)
-
-
-## Pre-requisites
-
-This theme has created with:
-- [Jekyll](https://jekyllrb.com/)
-- [SASS](http://sass-lang.com)
-- [pygments](https://jekyllrb.com/docs/templates/)
-- [syntax-highlighting](http://jekyll-windows.juthilo.com/3-syntax-highlighting/)
+Based on the [Labrador Jekyll Theme](https://github.com/donini/labrador-jekyll-theme) 
 
 ## Directory structure
 
@@ -59,40 +34,6 @@ labrador/
 +-- media
 ```
 
-
-### Settings on _config.yml_
-
-**title**: # the title for your site
-**email**: # your e-mail address
-**description**: # this means to ignore newlines until "baseurl:"
-**baseurl**: # the subpath of your site, e.g. /blog
-**url**:  # the base hostname & protocol for your site
-**logo**: # Your logo uri
-
-### Translations
-
-To use multiples languages you just need create file for yout desired language with .md or .markdown extension on project root. This files need this header:
-```
----
-layout: default
-permalink: /[CODE_OF_YOUR_LANGUAGE]/
-lang: [CODE_OF_YOUR_LANGUAGE]
----
-```
-
-For default this theme has [en] for english and [pt] for portuguese.
-
-#### _data folder
-On _data/lang/* is located the languages data files, with json synthax.
-
-Each json data group indicate in each file constains the relevant data to section information. See [sections](#sections).
-
-To create your own translation, just duplicate a json file, rename it and translate the terms.
-
-#### Social links
-
-You can link your social profiles on yout site, to do this, just open _data/social.json file, and add or remove your data for your social networks.
-
 ### Components
 
 On _includes folder are located the componentes used on this theme.
@@ -122,10 +63,6 @@ The _image:_ variable is used with a placeholder in the middle of content as you
 ### Media files for posts
 
 This folder contains the resources for posts, like images, documents, etc.
-
-#### Warning
-
-> Be careful, in the theme root is located .htaccess file, this file contains a code that will either redirect access to 'pt' directory. In my case this is the address of the home page.
 
 ### License
 
