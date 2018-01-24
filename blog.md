@@ -1,10 +1,10 @@
 ---
 layout: blog
 permalink: /blog/
-lang: pt
+lang: en
 ---
 
-# Últimas postagens
+# Latest Posts
 
 <ul class="blog-posts">
 {% for post in site.posts  %}
