@@ -3,7 +3,7 @@ email: james.coggan@gmail.com
 description: >
   Android craftsmanship passionate for IoT
 baseurl: ""
-url:  http://jamescoggan.com
+url:  https://jamescoggan.com
 logo: "/assets/img/logo.png"
 
 paginate: 10
