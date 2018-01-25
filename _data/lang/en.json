@@ -2,27 +2,27 @@
 	"name": "English",
 	"terms": [{
 		"profile_photo": {
-			"name": "Labrador",
-			"position": "Loyal friend",
+			"name": "James Coggan",
+			"position": "Android craftsmanship",
 			"change": "change to ",
-			"scroll_down": "Scroll down",
+			"scroll_down": "",
 			"section": "Me"
 		},
 		"profile_about": {
 			"title": "About",
-			"paragraph_1": "My full name is Charlotte Donini, but my friends call me simply 'Lotte' :-). I am a <a href='https://pt.wikipedia.org/wiki/Labrador_retriever' title='Labrador in wiki' target='_blank'> female labrador retriever </a>. I live with my lovely family.",
-			"paragraph_2": "I am very playful with my large size I drop everything that crosses in my way.",
-			"paragraph_3": "I love eating and sleeping during the day, lie in the sun belly up is my preferred position.",
-			"paragraph_4": "Run and walk with my master are my favorite sports.",
-			"section": "About",
+			"paragraph_1": "<a href='/blog'>Blog</a>",
+			"paragraph_2": "Passionate geek for all areas of technology with a strong love for Android and embedded devices.",
+			"paragraph_3": "Been working with technology for the last 14 years, where 3 have been with embedded devices and 8 have been with Android, due to that, is really favouring the Android Things, that connect the cloud to these two technologies.",
+			"paragraph_4": "Talked at Droidcon Tel Aviv and Londroid about Android Things, about Realm at a GDG London Meetup and Udacity Connect event. Will be talking about Android Things at GDG DevFest Minneapolis and GDG DevFest Kansas City.",
+			"section": "",
 			"title_social": "Social"
 		},
 		"profile_quote": {
 			"title": "Favorite quote",
-			"quote": "\" No matter that few are your possessions and your money. Having a dog makes you rich. \"",
-			"author": "Louis Sabin",
+			"quote": "\"People think that the opposite of success is failure, but it's not. Failure is part of the process of success. \"",
+			"author": "Randy Gage",
 			"section": "Quote"
 		},
-		"copyright": "Copyright © 2016 Rodrigo Donini. Made with ♥ and <a href='https://jekyllrb.com/' target='_blank'>Jekyll</a> fork on <a href='https://github.com/donini/personal-page' target='_blank'>Github</a>."
+		"copyright": "Copyright © 2018 James Coggan. <a href='https://github.com/jamescoggan/jamescoggan.github.io' target='_blank'>Source</a>."
 	}]
 }
