@@ -4,16 +4,16 @@
     {
       "profile_photo": {
         "name": "James Coggan",
-        "position": "Android craftsmanship",
+        "position": "Software craftsmanship",
         "change": "change to ",
         "scroll_down": "",
         "section": "Me"
       },
       "profile_about": {
         "title": "About",
-        "paragraph_1": "Passionate geek for all areas of technology with a strong love for Android and embedded devices.",
-        "paragraph_2": "Been working with technology for the last 14 years, where 3 have been with embedded devices and 8 have been with Android, due to that, is really favouring the Android Things, that connect the cloud to these two technologies.",
-        "paragraph_3": "Talked at Droidcon Tel Aviv and Londroid about Android Things, about Realm at a GDG London Meetup and Udacity Connect event. Will be talking about Android Things at GDG DevFest Minneapolis and GDG DevFest Kansas City.",
+        "paragraph_1": "Passionate geek for all areas of technology",
+        "paragraph_2": "Been working with technology for the last 25 years",
+        "paragraph_3": "",
         "section": "",
         "title_social": "Social"
       },
@@ -27,7 +27,7 @@
         "title" : "Latest posts",
         "more_posts" : "More posts"
       },
-      "copyright": "Copyright © 2018 James Coggan. <a href='https://github.com/jamescoggan/jamescoggan.github.io' target='_blank'>Source</a>."
+      "copyright": "Copyright © 2025 James Coggan. <a href='https://github.com/jamescoggan/jamescoggan.github.io' target='_blank'>Source</a>."
     }
   ]
 }
