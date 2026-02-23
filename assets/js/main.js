@@ -1,46 +1,83 @@
-/*
- *
- *  ||    // \\ || )) || \\ // \\ || \\   // \\  || \\
- *  ||    ||=|| ||=)  ||_// ||=|| ||  )) ((   )) ||_//
- *  ||__| || || ||_)) || \\ || || ||_//   \\_//  || \\
- *
- *
- * Designed, built, and released under MIT license by @donini. Learn more at
- * https://github.com/donini/labrador-jekyll-theme.
- */
+/* ============================================
+   James Coggan — Portfolio JS
+   ============================================ */
 
-$(document).ready(function () { 
-	$(window).scroll(function (event) {
-		var scroll = $(window).scrollTop();
-		// ABOUT
-		if (scroll >= 400) $('.text-about p').addClass('show');
-		if (scroll <= 200) $('.text-about p').removeClass('show');
-		// QUOTE
-		if (scroll >= 1200) { $('.text-quote p').addClass('show'); $('.section-bullets').addClass('section-bullets-white'); }
-		if (scroll >= 2090 || scroll <= 1200) { $('.text-quote p').removeClass('show');$('.section-bullets').removeClass('section-bullets-white'); }
-		// LANGUAGE
-		if (scroll >= 1580) { $('.profile-photo').addClass('profile-photo-white'); }
-		if (scroll >= 2280 || scroll <= 1580) { $('.profile-photo').removeClass('profile-photo-white'); }
-		console.log(scroll);
-	});
+(function () {
+    'use strict';
 
-	$('body').sectionScroll();
+    // --- Intersection Observer for fade-up animations ---
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -40px 0px'
+    };
 
-	$('.profile-photo').addClass('profile-photo-show');
+    const observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
 
-	/* MENU RESPONSIVE */
-	$('.btn-responsive-menu').click(function(e) {
-		e.preventDefault();
-		var menu = $('.responsive-menu');
-		if (menu.hasClass('open')) {
-			menu.removeClass('open');
-		}
-		else {
-			menu.addClass('open');
-		}
-	});
-	$('.responsive-menu ul li a').click(function(e) {
-		// e.preventDefault();
-		$('.responsive-menu').removeClass('open');
-	})
-});
+    document.querySelectorAll('.fade-up').forEach(function (el) {
+        observer.observe(el);
+    });
+
+    // --- Sticky nav scroll effect ---
+    var nav = document.getElementById('nav');
+    var lastScroll = 0;
+
+    window.addEventListener('scroll', function () {
+        var scroll = window.pageYOffset;
+        if (scroll > 50) {
+            nav.classList.add('nav--scrolled');
+        } else {
+            nav.classList.remove('nav--scrolled');
+        }
+        lastScroll = scroll;
+    }, { passive: true });
+
+    // --- Mobile nav toggle ---
+    var toggle = document.getElementById('nav-toggle');
+    var navLinks = document.getElementById('nav-links');
+
+    toggle.addEventListener('click', function () {
+        toggle.classList.toggle('nav__toggle--open');
+        navLinks.classList.toggle('nav__links--open');
+        document.body.style.overflow = navLinks.classList.contains('nav__links--open') ? 'hidden' : '';
+    });
+
+    // Close mobile nav on link click
+    navLinks.querySelectorAll('.nav__link').forEach(function (link) {
+        link.addEventListener('click', function () {
+            toggle.classList.remove('nav__toggle--open');
+            navLinks.classList.remove('nav__links--open');
+            document.body.style.overflow = '';
+        });
+    });
+
+    // --- Active nav link highlight on scroll ---
+    var sections = document.querySelectorAll('section[id]');
+
+    function updateActiveNav() {
+        var scrollY = window.pageYOffset + 120;
+        sections.forEach(function (section) {
+            var top = section.offsetTop;
+            var height = section.offsetHeight;
+            var id = section.getAttribute('id');
+            var link = document.querySelector('.nav__link[href="#' + id + '"]');
+            if (link) {
+                if (scrollY >= top && scrollY < top + height) {
+                    link.classList.add('nav__link--active');
+                } else {
+                    link.classList.remove('nav__link--active');
+                }
+            }
+        });
+    }
+
+    window.addEventListener('scroll', updateActiveNav, { passive: true });
+    updateActiveNav();
+
+})();

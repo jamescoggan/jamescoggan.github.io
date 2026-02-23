@@ -1,12 +1,397 @@
----
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James Coggan — Senior Android Engineer & Engineering Manager</title>
+    <meta name="description" content="Senior Android Engineer with 25+ years shipping software at scale. Meta, Google Developer Expert, American Express. Available for remote contract work.">
+    <meta name="author" content="James Coggan">
 
-<html xmlns="https://www.w3.org/1999/xhtml">    
-  <head>      
-    <title>{{site.title}}</title>      
-    <meta http-equiv="refresh" content="0;URL='{{ site.url | prepend: site.baseurl }}/en/'" />    
-  </head>    
-  <body> 
-    <p>This page has moved to a <a href="{{ site.url | prepend: site.baseurl }}/en/">{{ site.url | prepend: site.baseurl }}/en/</a>.</p> 
-  </body>  
-</html> 
+    <!-- Open Graph -->
+    <meta property="og:title" content="James Coggan — Senior Android Engineer & Engineering Manager">
+    <meta property="og:description" content="25+ years shipping software at scale. Meta, Google Developer Expert, American Express. Available for remote contract work.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jamescoggan.com">
+    <meta property="og:image" content="https://jamescoggan.com/assets/img/profile_photo.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="James Coggan — Senior Android Engineer & Engineering Manager">
+    <meta name="twitter:description" content="25+ years shipping software at scale. Meta, Google Developer Expert, American Express. Available for remote contract work.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico">
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav__container">
+            <a href="#hero" class="nav__logo">JC</a>
+            <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav__links" id="nav-links">
+                <li><a href="#about" class="nav__link">About</a></li>
+                <li><a href="#experience" class="nav__link">Experience</a></li>
+                <li><a href="#skills" class="nav__link">Skills</a></li>
+                <li><a href="#achievements" class="nav__link">Achievements</a></li>
+                <li><a href="#contact" class="nav__link nav__link--cta">Get in Touch</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="hero__bg"></div>
+        <div class="hero__content">
+            <p class="hero__greeting fade-up">Hello, I'm</p>
+            <h1 class="hero__name fade-up">James Coggan</h1>
+            <h2 class="hero__title fade-up">Senior Android Engineer &amp; Engineering Manager</h2>
+            <p class="hero__tagline fade-up">25+ years shipping software at scale.<br>Meta, Google Developer Expert, American Express.</p>
+            <p class="hero__available fade-up">
+                <span class="hero__dot"></span>
+                Available for remote contract work &middot; Seville, Spain
+            </p>
+            <div class="hero__cta fade-up">
+                <a href="mailto:james.coggan@gmail.com" class="btn btn--primary">Get in Touch</a>
+                <a href="https://linkedin.com/in/jamescoggan" target="_blank" rel="noopener noreferrer" class="btn btn--outline">LinkedIn</a>
+            </div>
+        </div>
+        <div class="hero__scroll">
+            <a href="#about" aria-label="Scroll to about section">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section__title fade-up">About Me</h2>
+            <div class="about">
+                <div class="about__photo fade-up">
+                    <img src="/assets/img/profile_photo.jpg" alt="James Coggan" loading="lazy">
+                </div>
+                <div class="about__text fade-up">
+                    <p>Senior Android engineer with <strong>12+ years of mobile experience</strong>, including 2.5 years at Meta working on infrastructure that served <strong>1 billion daily test executions</strong>.</p>
+                    <p>Former <strong>Google Developer Expert (IoT)</strong>. Proven track record at scale — from architecture and delivery to CI/CD, team leadership, and engineering manager roles at Meta and American Express.</p>
+                    <div class="about__details">
+                        <div class="about__detail">
+                            <span class="about__label">Location</span>
+                            <span class="about__value">Seville, Spain</span>
+                        </div>
+                        <div class="about__detail">
+                            <span class="about__label">Experience</span>
+                            <span class="about__value">25+ Years</span>
+                        </div>
+                        <div class="about__detail">
+                            <span class="about__label">Availability</span>
+                            <span class="about__value">Remote Contract</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section section--alt" id="experience">
+        <div class="container">
+            <h2 class="section__title fade-up">Experience</h2>
+            <div class="timeline">
+
+                <div class="timeline__item fade-up">
+                    <div class="timeline__marker"></div>
+                    <div class="timeline__content">
+                        <div class="timeline__header">
+                            <h3 class="timeline__role">Engineering Manager</h3>
+                            <span class="timeline__company">Welltech</span>
+                        </div>
+                        <p class="timeline__date">February 2025 – Present &middot; Remote, Spain</p>
+                        <ul class="timeline__list">
+                            <li>Improved Android crash-free sessions rate from 98% to 99.9% — 10x reduction in user-facing crashes</li>
+                            <li>Scaled test coverage from 50 to 2,000+ tests (40x); introduced screenshot testing</li>
+                            <li>Designed and built a custom E2E testing CLI + DSL — same class of tooling built at Meta</li>
+                            <li>Reduced delivery time by 66% with fewer bugs through incremental delivery</li>
+                            <li>Pioneering AI-assisted engineering workflows to multiply developer output</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline__item fade-up">
+                    <div class="timeline__marker"></div>
+                    <div class="timeline__content">
+                        <div class="timeline__header">
+                            <h3 class="timeline__role">Senior Software Engineer</h3>
+                            <span class="timeline__company">Meta</span>
+                            <span class="timeline__team">Testing Frameworks</span>
+                        </div>
+                        <p class="timeline__date">April 2021 – November 2024 (3 years 8 months) &middot; Remote / London</p>
+                        <ul class="timeline__list">
+                            <li>Reduced Android instrumentation test flakiness by 80%</li>
+                            <li>Led migration of Android + iOS screenshot tests to unified infrastructure, cutting capacity usage by 50%</li>
+                            <li>Upgraded 1 billion daily Android, iOS, and Chrome tests to latest platform versions</li>
+                            <li>Redesigned UI/UX of Meta's primary E2E testing solution for 150k+ weekly test executions</li>
+                            <li>Top 3 interviewer in the organisation for H1 2024 (62 behavioural interviews)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline__item fade-up">
+                    <div class="timeline__marker"></div>
+                    <div class="timeline__content">
+                        <div class="timeline__header">
+                            <h3 class="timeline__role">Mobile Tech Lead</h3>
+                            <span class="timeline__company">ParcelChain</span>
+                        </div>
+                        <p class="timeline__date">January 2023 – January 2024 &middot; Remote, Spain</p>
+                        <ul class="timeline__list">
+                            <li>Architected full Android stack from scratch: Kotlin, Jetpack Compose, Coroutine Flow, Circuit (Slack)</li>
+                            <li>Integrated GPS, gRPC, REST (Retrofit), Room, DI (Dagger/Hilt)</li>
+                            <li>Full test coverage: instrumentation tests, JUnit, mocking</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline__item fade-up">
+                    <div class="timeline__marker"></div>
+                    <div class="timeline__content">
+                        <div class="timeline__header">
+                            <h3 class="timeline__role">Google Developer Expert</h3>
+                            <span class="timeline__company">Google</span>
+                            <span class="timeline__team">IoT</span>
+                        </div>
+                        <p class="timeline__date">March 2018 – May 2022 &middot; London</p>
+                        <ul class="timeline__list">
+                            <li>Selected by Google for outstanding expertise in developer technologies</li>
+                            <li>Represented Google at Droidcon Tel Aviv, GDG DevFest Kansas City, GDG DevFest Minneapolis, GDG London</li>
+                            <li>Mentored developers globally on Android and IoT platforms</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline__item fade-up">
+                    <div class="timeline__marker"></div>
+                    <div class="timeline__content">
+                        <div class="timeline__header">
+                            <h3 class="timeline__role">Engineering Manager</h3>
+                            <span class="timeline__company">American Express</span>
+                        </div>
+                        <p class="timeline__date">June 2018 – April 2021 &middot; London</p>
+                        <ul class="timeline__list">
+                            <li>Led mobile engineering team delivering Android and iOS apps to 21 global markets</li>
+                            <li>Redesigned team processes, increasing delivery efficiency by 300% while reducing bug ratio by 75%</li>
+                            <li>Mentored engineers; drove cross-functional collaboration across engineering, design, and product</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline__item fade-up">
+                    <div class="timeline__marker"></div>
+                    <div class="timeline__content">
+                        <div class="timeline__header">
+                            <h3 class="timeline__role">Mobile Engineering Manager &amp; Android Tech Lead</h3>
+                            <span class="timeline__company">MyDrive Solutions</span>
+                        </div>
+                        <p class="timeline__date">June 2015 – June 2018 &middot; London</p>
+                        <ul class="timeline__list">
+                            <li>Set up entire mobile CI/CD pipeline on Bitrise from scratch</li>
+                            <li>Led architectural redesign of mobile apps</li>
+                            <li>Transitioned mobile development in-house</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+        <div class="container">
+            <h2 class="section__title fade-up">Skills &amp; Expertise</h2>
+            <div class="skills">
+
+                <div class="skills__group fade-up">
+                    <h3 class="skills__category">
+                        <span class="skills__icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+                        </span>
+                        Android
+                    </h3>
+                    <div class="skills__pills">
+                        <span class="pill">Kotlin</span>
+                        <span class="pill">Jetpack Compose</span>
+                        <span class="pill">Coroutines/Flow</span>
+                        <span class="pill">gRPC</span>
+                        <span class="pill">Retrofit</span>
+                        <span class="pill">Room</span>
+                        <span class="pill">Dagger/Hilt</span>
+                    </div>
+                </div>
+
+                <div class="skills__group fade-up">
+                    <h3 class="skills__category">
+                        <span class="skills__icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                        </span>
+                        Testing
+                    </h3>
+                    <div class="skills__pills">
+                        <span class="pill">Android Instrumentation</span>
+                        <span class="pill">JUnit</span>
+                        <span class="pill">Espresso</span>
+                        <span class="pill">Screenshot Testing</span>
+                        <span class="pill">E2E DSLs</span>
+                    </div>
+                </div>
+
+                <div class="skills__group fade-up">
+                    <h3 class="skills__category">
+                        <span class="skills__icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                        </span>
+                        Infrastructure
+                    </h3>
+                    <div class="skills__pills">
+                        <span class="pill">CI/CD</span>
+                        <span class="pill">Bitrise</span>
+                        <span class="pill">Custom Pipelines</span>
+                        <span class="pill">Git</span>
+                        <span class="pill">Test Infra at Scale</span>
+                    </div>
+                </div>
+
+                <div class="skills__group fade-up">
+                    <h3 class="skills__category">
+                        <span class="skills__icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                        </span>
+                        Leadership
+                    </h3>
+                    <div class="skills__pills">
+                        <span class="pill">Engineering Manager</span>
+                        <span class="pill">Tech Lead</span>
+                        <span class="pill">Hiring & Interviewing</span>
+                        <span class="pill">Mentoring</span>
+                    </div>
+                </div>
+
+                <div class="skills__group fade-up">
+                    <h3 class="skills__category">
+                        <span class="skills__icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+                        </span>
+                        AI-Assisted Engineering
+                    </h3>
+                    <div class="skills__pills">
+                        <span class="pill">Workflow Automation</span>
+                        <span class="pill">AI Coding Tools</span>
+                        <span class="pill">Developer Productivity</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements -->
+    <section class="section section--alt" id="achievements">
+        <div class="container">
+            <h2 class="section__title fade-up">Notable Achievements</h2>
+            <div class="achievements">
+
+                <div class="achievement fade-up">
+                    <div class="achievement__icon">&#127942;</div>
+                    <h3 class="achievement__title">1 Billion Daily Tests</h3>
+                    <p class="achievement__desc">Built infrastructure serving 1B+ daily test executions at Meta</p>
+                </div>
+
+                <div class="achievement fade-up">
+                    <div class="achievement__icon">&#128295;</div>
+                    <h3 class="achievement__title">80% Flakiness Reduction</h3>
+                    <p class="achievement__desc">Eliminated test flakiness for thousands of Meta engineers</p>
+                </div>
+
+                <div class="achievement fade-up">
+                    <div class="achievement__icon">&#128241;</div>
+                    <h3 class="achievement__title">2M+ Downloads</h3>
+                    <p class="achievement__desc">MadTeam Android ROM: largest community for the device (2M+ downloads)</p>
+                </div>
+
+                <div class="achievement fade-up">
+                    <div class="achievement__icon">&#127919;</div>
+                    <h3 class="achievement__title">Google Developer Expert</h3>
+                    <p class="achievement__desc">Selected by Google, spoke at international developer conferences</p>
+                </div>
+
+                <div class="achievement fade-up">
+                    <div class="achievement__icon">&#128101;</div>
+                    <h3 class="achievement__title">300% Efficiency Gain</h3>
+                    <p class="achievement__desc">Redesigned delivery process at American Express</p>
+                </div>
+
+                <div class="achievement fade-up">
+                    <div class="achievement__icon">&#129302;</div>
+                    <h3 class="achievement__title">AI Pioneer</h3>
+                    <p class="achievement__desc">Building AI-assisted workflows; leveraging AI to multiply team output</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="section__title fade-up">Let's Work Together</h2>
+            <div class="contact fade-up">
+                <p class="contact__intro">Available for <strong>Remote Contract</strong>, <strong>Senior Android Engineering</strong>, <strong>Engineering Manager</strong>, and <strong>Fractional CTO</strong> roles.</p>
+                <div class="contact__links">
+                    <a href="mailto:james.coggan@gmail.com" class="contact__item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        james.coggan@gmail.com
+                    </a>
+                    <a href="https://linkedin.com/in/jamescoggan" target="_blank" rel="noopener noreferrer" class="contact__item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        linkedin.com/in/jamescoggan
+                    </a>
+                    <a href="https://github.com/jamescoggan" target="_blank" rel="noopener noreferrer" class="contact__item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        github.com/jamescoggan
+                    </a>
+                </div>
+                <a href="mailto:james.coggan@gmail.com" class="btn btn--primary btn--lg">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <p class="footer__copy">&copy; 2026 James Coggan. All rights reserved.</p>
+                <div class="footer__links">
+                    <a href="https://linkedin.com/in/jamescoggan" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="https://github.com/jamescoggan" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="mailto:james.coggan@gmail.com">Email</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
