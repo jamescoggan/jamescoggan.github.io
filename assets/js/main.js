@@ -5,6 +5,9 @@
 (function () {
     'use strict';
 
+    // Enable JS-powered animations (hides fade-up elements until scrolled into view)
+    document.body.classList.add('js-ready');
+
     // --- Intersection Observer for fade-up animations ---
     const observerOptions = {
         threshold: 0.1,

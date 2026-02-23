@@ -720,12 +720,17 @@ img {
 
 /* --- Fade-up Animation --- */
 .fade-up {
-    opacity: 0;
-    transform: translateY(24px);
+    opacity: 1;
+    transform: translateY(0);
     transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.fade-up.visible {
+.js-ready .fade-up {
+    opacity: 0;
+    transform: translateY(24px);
+}
+
+.js-ready .fade-up.visible {
     opacity: 1;
     transform: translateY(0);
 }
