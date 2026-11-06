@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — Chief | James Coggan</title>
+    <meta name="description" content="Privacy policy for Chief, James Coggan's personal assistant: what Google user data it accesses, how it is used, stored, shared and deleted.">
+    <meta name="author" content="James Coggan">
+    <link rel="canonical" href="https://jamescoggan.com/privacy">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <style>
+        .nav { background: rgba(15, 23, 36, 0.95); border-bottom-color: var(--border); }
+        .nav__home { color: var(--text-secondary); font-size: 0.875rem; font-weight: 500; }
+        .nav__home:hover { color: var(--text-primary); }
+        .policy { padding: calc(var(--nav-height) + 56px) 0 80px; }
+        .policy__inner { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+        .policy h1 { font-size: clamp(2rem, 5vw, 2.75rem); font-weight: 800; letter-spacing: -0.02em; line-height: 1.15; margin-bottom: 12px; }
+        .policy__meta { color: var(--text-muted); font-size: 0.875rem; margin-bottom: 40px; }
+        .policy h2 { font-size: 1.375rem; font-weight: 700; margin: 48px 0 16px; padding-top: 24px; border-top: 1px solid var(--border); }
+        .policy h3 { font-size: 1.0625rem; font-weight: 600; margin: 28px 0 10px; }
+        .policy p, .policy li { color: var(--text-secondary); font-size: 1rem; }
+        .policy p { margin-bottom: 16px; }
+        .policy ul, .policy ol { margin: 0 0 16px 22px; }
+        .policy li { margin-bottom: 8px; }
+        .policy li::marker { color: var(--accent); }
+        .policy code { font-size: 0.875em; background: var(--bg-card); padding: 2px 6px; border-radius: 4px; color: var(--text-primary); word-break: break-word; }
+        .policy .callout { background: var(--bg-card); border: 1px solid var(--border-accent); border-radius: var(--radius-sm); padding: 20px 24px; margin: 24px 0; }
+        .policy .callout p:last-child { margin-bottom: 0; }
+        .policy table { width: 100%; border-collapse: collapse; margin: 0 0 20px; font-size: 0.9375rem; display: block; overflow-x: auto; }
+        .policy th, .policy td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--border); color: var(--text-secondary); }
+        .policy th { color: var(--text-primary); font-weight: 600; }
+    </style>
+</head>
+<body>
+    <nav class="nav" id="nav">
+        <div class="nav__container">
+            <a href="/" class="nav__logo">JC</a>
+            <a href="/" class="nav__home">&larr; jamescoggan.com</a>
+        </div>
+    </nav>
+
+    <main class="policy">
+        <article class="policy__inner">
+            <h1>Chief Privacy Policy</h1>
+            <p class="policy__meta">Last updated: 6 November 2026</p>
+
+            <div class="callout">
+                <p><strong>Chief is a private, single-user app.</strong> Chief is a personal AI assistant that James Coggan built and runs for himself. It is not offered to the public, nobody else can sign up, and the only Google account connected to it is James's own. This policy explains, as precisely as possible, what Chief does with data from Google APIs and with other personal data, so that anyone reviewing it, including Google, can see exactly what happens.</p>
+            </div>
+
+            <p><strong>Controller:</strong> James Coggan, Seville, Spain. James is both the controller and the only user of Chief.<br>
+            <strong>Contact:</strong> james.coggan@gmail.com</p>
+
+            <h2>1. Google data Chief accesses</h2>
+            <p>Chief connects to one Google account, James's, through Google OAuth. It requests three permissions.</p>
+
+            <h3>Gmail (<code>gmail.modify</code>)</h3>
+            <p>Chief uses this permission for three things only:</p>
+            <ul>
+                <li><strong>Search.</strong> When James asks, Chief searches his mail. For each matching thread it reads the subject, the From, To and Cc headers, the dates and Gmail's short preview snippet. It does not download full message bodies or attachments.</li>
+                <li><strong>Labels.</strong> Chief can add a label to a thread, using only labels from a fixed list James chose. It never removes labels, and never archives, trashes or deletes mail.</li>
+                <li><strong>Drafts.</strong> Chief can create a draft for James, or update one. Replacing an existing draft always needs James's explicit confirmation.</li>
+            </ul>
+            <p><strong>Chief never sends email.</strong> It has no send function. James reviews every draft in Gmail and sends it himself. When James connects his account, Chief also reads, once, his email address (to confirm the right account was chosen) and the names of his Gmail labels (to find the ones he chose).</p>
+
+            <h3>Google Calendar (<code>calendar.events</code>, <code>calendar.calendarlist.readonly</code>)</h3>
+            <ul>
+                <li><strong>For the assistant</strong>, Chief reads events from calendars James chose, and uses each event's title, location, start and end time and status.</li>
+                <li><strong>For James's private dashboard</strong>, a calendar view on his own device, Chief reads every calendar in his calendar list, including calendars that others share with him. It uses each event's title (or only its time, for calendars shared as free/busy), its times, and whether James declined it, which Google reports through the event's guest list. Dashboard data is handled by plain code: it never reaches the AI model, Chief's memory or its database.</li>
+                <li><strong>Changes.</strong> Chief can create events, but only on calendars James owns and has allowed. It never invites anyone and never sends invitations. It never edits existing events. It can delete only an event that Chief itself created, as an "undo", and only with James's explicit confirmation.</li>
+            </ul>
+            <p>Emails from other people, and calendars they share with James, contain their personal data. Chief processes that data only to serve James, as described here.</p>
+
+            <h2>2. How Chief uses Google data</h2>
+            <p>Chief uses Google data only to provide features James asks for:</p>
+            <ul>
+                <li>answering his questions about his mail and schedule;</li>
+                <li>preparing email drafts, applying labels and adding calendar events for him;</li>
+                <li>showing his week on his private calendar dashboard;</li>
+                <li>carrying out tasks he asks for that need details from his mail or calendar (see section 3).</li>
+            </ul>
+            <p>Chief changes Google data only while carrying out something James asked for. Depending on his settings, it either asks him to confirm first, or makes the change and immediately reports it to him in Telegram, with an Undo button where the change can be undone.</p>
+
+            <h3>Protection against malicious email</h3>
+            <p>Chief treats email text as data, never as instructions. Its access is limited by design: it cannot send, delete or archive mail; it cannot edit or delete existing events or invite anyone; it can label only with James's chosen labels; and it can write only to calendars he owns and allowed. The AI model never holds Google credentials. Every call to Google is made by fixed code that enforces these limits.</p>
+
+            <h3>Limited Use</h3>
+            <div class="callout">
+                <p>Chief's use and transfer of information received from Google APIs to any other app will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener noreferrer">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+            </div>
+            <p>Chief does not use Google data for advertising, does not sell it, does not use it to build profiles, and does not use it for any purpose unrelated to the features above.</p>
+
+            <h3>No AI training</h3>
+            <p>Chief does not use Google Workspace API data, or anything derived from it, to develop, improve or train generalised AI or machine-learning models, and does not transfer it to anyone for that purpose. The AI services that process it for Chief's features (section 3) do so under account settings or API terms that do not allow them to train their models on it: model-training is turned off on James's Anthropic and xAI accounts, and OpenAI, Google Gemini and TypeSafe are used through their paid APIs.</p>
+
+            <h2>3. Who receives Google data</h2>
+            <p>Google data is shared only with services that perform Chief's features, and only for that purpose:</p>
+            <ul>
+                <li><strong>Anthropic (Claude), USA.</strong> Chief's reasoning runs on Anthropic's Claude models. When James asks about his mail or calendar, the search results described in section 1 are sent to Claude so it can answer. Claude also receives earlier conversation that may quote them, when it continues the conversation or extracts notes from it.</li>
+                <li><strong>TypeSafe, USA.</strong> To measure how often email contains instructions aimed at an AI, Chief sends the subject and preview snippet of Gmail search results to TypeSafe's classifier. Sender and recipient headers are not sent, and email addresses and phone numbers in the text are replaced with placeholders. Names in the text may remain. The result is only recorded and does not change what Chief does.</li>
+                <li><strong>Telegram.</strong> James talks to Chief in a private Telegram chat. Chief's replies, and the confirmation messages it shows him (which can include a draft's recipients, subject and opening text, or an event's details), are delivered and stored by Telegram as part of that chat.</li>
+                <li><strong>xAI (Grok), USA.</strong> James can ask Chief questions by voice from Grok, for example in his car. Chief's answer, which may mention his mail or schedule, is returned to his own Grok conversation.</li>
+                <li><strong>Cloudflare, USA.</strong> Chief's public connection point, <code>edge.jamescoggan.com</code>, sits behind Cloudflare, which can see Grok questions and answers as they pass through. Dashboard pages and James's voice-app traffic are encrypted end to end, so Cloudflare and Chief's own relay see only encrypted data; the relay keeps dashboard pages for at most 48 hours. The dashboard app is hosted on Cloudflare Pages behind a Cloudflare Access login that only James can use.</li>
+                <li><strong>Hetzner, Germany.</strong> Hetzner hosts Chief's server and its server images.</li>
+            </ul>
+            <p><strong>Tasks James asks for.</strong> When James asks Chief to act for him, the text Chief writes for that task can include details from his email or calendar. That text goes to the service that carries out the task:</p>
+            <ul>
+                <li>a <strong>WhatsApp</strong> message he asked for, delivered by WhatsApp (Meta) to its recipient;</li>
+                <li>a task in his <strong>Linear</strong> account (USA);</li>
+                <li>a job for Chief's coding and browsing agent: Claude Code (Anthropic), running on a computer of James's. It may use <strong>TypeSafe</strong> and <strong>Google Gemini</strong> to operate a web browser, and may open pull requests on <strong>GitHub</strong> (USA);</li>
+                <li>a <strong>phone call</strong> Chief places for him, carried by <strong>Twilio</strong> (USA), voiced by <strong>xAI</strong> or <strong>OpenAI</strong> (USA), and heard by the person called. If the call needs to check James's availability, the calendar lookup returns only "free" or "busy" for the proposed time, never event titles or details.</li>
+            </ul>
+            <p>Chief does not send Google data to these services for any other purpose.</p>
+            <p><strong>People.</strong> No person other than James reads Chief's data, apart from provider staff where a provider's own terms allow it (for example, for abuse or security review), and disclosures required by law.</p>
+
+            <h2>4. Storage and security</h2>
+            <ul>
+                <li><strong>Where.</strong> Chief runs on a single server in Germany, rented from Hetzner, in Docker containers with a PostgreSQL database. Chief's main service has no public address. The server's public ports serve only Chief's encrypted relay and the phone-call bridge.</li>
+                <li><strong>What is kept.</strong> Chief does not keep a copy of James's mailbox or calendars, and search results are not saved in its database. What Chief keeps is:
+                    <ul>
+                        <li>its conversation with James, including replies and spoken answers (to Grok and his voice app) that may quote email or calendar details;</li>
+                        <li>notes it extracts from that conversation;</li>
+                        <li>a record of each action it took or proposed (for example a draft's recipients, subject and body, or an event's title and time) and the result;</li>
+                        <li>for phone calls, the call's instructions, outcome and transcript.</li>
+                    </ul>
+                    The AI runtime also keeps a temporary working copy of each conversation, including search results, in memory-backed storage that is cleared when the service restarts. Operational logs and error records are designed to hold identifiers, counts and error descriptions, not message content.</li>
+                <li><strong>Tokens.</strong> When James connects his account, his Google refresh token is passed to the server once as a protected secret file. That file is removed after the token has been imported and encrypted with AES-256-GCM. The encryption key is a separate secret file, not stored in the database. It is on the same server, so anyone with full access to the server or its backups could decrypt the token. Short-lived access tokens are held only in memory. Tokens are never logged and never given to the AI model.</li>
+                <li><strong>Access.</strong> Only James has administrative access to the server, by SSH key. Hetzner, as the hosting provider, can technically access the server's disk and its images. James sometimes administers the server with an AI coding assistant under his supervision; its operational checks print counts, not message content.</li>
+            </ul>
+
+            <h2>5. Retention and deletion</h2>
+            <ul>
+                <li><strong>Conversation records, notes and action records</strong> are kept until they are deleted. Any of them, including any record of another person's data, will be deleted within 30 days of a request to james.coggan@gmail.com.</li>
+                <li><strong>Phone call transcripts</strong> are erased automatically 90 days after the call.</li>
+                <li><strong>Dashboard pages</strong> expire from the relay within 48 hours.</li>
+                <li><strong>Backups.</strong> Hetzner server images and James's own backups contain the same data. Data deleted on request is also removed from them within the same 30 days.</li>
+            </ul>
+            <p>Data held by Telegram, Anthropic, xAI, OpenAI, TypeSafe, Google (Gemini), Linear, GitHub, WhatsApp and Twilio follows those providers' own retention terms.</p>
+
+            <h2>6. Revoking access</h2>
+            <p>James can revoke Chief's access to Google at any time at <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer">myaccount.google.com/permissions</a>. After revocation, Chief can no longer read or change any Google data, and the stored token stops working. Chief reports that the connection has failed. Records it already holds are deleted on request, as described in section 5.</p>
+
+            <h2>7. International transfers</h2>
+            <p>Chief's server is in the EU (Germany). The providers listed in section 3 that are based in the United States, and Telegram, may process data outside the EU. These transfers rely on the safeguards each provider offers in its terms, such as the EU–US Data Privacy Framework or the European Commission's Standard Contractual Clauses.</p>
+
+            <h2>8. Your rights (GDPR)</h2>
+            <p>Chief processes James's own data because he chose to run it as his assistant. Other people's names, addresses and messages come from James's Gmail and Google Calendar. Chief processes them on the basis of James's legitimate interest in managing his own correspondence and schedule (Art. 6(1)(f) GDPR), and uses them for nothing else. Chief makes no automated decisions about other people.</p>
+            <p>If your data is in James's mail or calendars, you have these rights:</p>
+            <ul>
+                <li>access to your data;</li>
+                <li>rectification;</li>
+                <li>erasure;</li>
+                <li>restriction;</li>
+                <li>objection;</li>
+                <li>data portability.</li>
+            </ul>
+            <p>To use any of these rights, write to james.coggan@gmail.com. You will get an answer within one month. You can also complain to the Spanish data protection authority, the Agencia Española de Protección de Datos (AEPD), at <a href="https://www.aepd.es" target="_blank" rel="noopener noreferrer">www.aepd.es</a>.</p>
+
+            <h2>9. Changes</h2>
+            <p>If this policy changes, the new version will be posted at <a href="https://jamescoggan.com/privacy">jamescoggan.com/privacy</a> with a new "Last updated" date.</p>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <p class="footer__copy">&copy; 2026 James Coggan. All rights reserved.</p>
+                <div class="footer__links">
+                    <a href="/">Home</a>
+                    <a href="https://github.com/jamescoggan" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
